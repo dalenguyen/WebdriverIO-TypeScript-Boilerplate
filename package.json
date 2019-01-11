@@ -15,7 +15,11 @@
     "webdriverio",
     "typescript"
   ],
-  "author": "",
+  "author": {
+    "name": "Dale Nguyen",
+    "email": "dungnq@itbox4vn.com",
+    "url": "http://dalenguyen.me"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.1.7",
