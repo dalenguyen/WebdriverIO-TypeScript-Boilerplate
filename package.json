@@ -1,0 +1,43 @@
+{
+  "name": "webdriverio-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "./node_modules/.bin/prettier --write ./test/**/*.ts ./models/**/*.ts ./pages/**/*.ts ./services/**/*.ts",
+    "test": "npm run prettier && ./node_modules/.bin/wdio wdio.conf.js",
+    "dev": "npm run prettier && ./node_modules/.bin/wdio wdio.conf.js --spec",
+    "clean-report": "./node_modules/.bin/rimraf allure-report allure-results",
+    "run-report": "./node_modules/.bin/allure generate allure-results/ --clean && ./node_modules/.bin/allure open",
+    "report": "npm run clean-report && npm run test ; npm run run-report"
+  },
+  "keywords": [
+    "webdriverio",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/webdriverio": "^4.13.1",
+    "@wdio/allure-reporter": "^5.2.3",
+    "@wdio/cli": "^5.2.4",
+    "@wdio/local-runner": "^5.2.4",
+    "@wdio/mocha-framework": "^5.2.3",
+    "@wdio/selenium-standalone-service": "^5.2.2",
+    "@wdio/spec-reporter": "^5.2.3",
+    "@wdio/sync": "^5.2.3",
+    "allure-commandline": "^2.8.1",
+    "chai": "^4.2.0",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.3",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.7.0",
+    "typescript": "^3.2.2",
+    "webdriverio": "^5.2.4"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  }
+}
