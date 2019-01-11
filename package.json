@@ -1,7 +1,7 @@
 {
   "name": "webdriverio-typescript-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project will show you how to start your UI Automation Test with WebdriverIO and TypeScript",
   "main": "index.js",
   "scripts": {
     "prettier": "./node_modules/.bin/prettier --write ./test/**/*.ts ./models/**/*.ts ./pages/**/*.ts ./services/**/*.ts",
