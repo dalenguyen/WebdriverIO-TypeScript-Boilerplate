@@ -5,7 +5,7 @@ describe("webdriver.io page", () => {
     browser.url("/");
     const title = browser.getTitle();
     expect(title).to.be.equal(
-      "WebdriverIO · Next-gen WebDriver test framework for Node.js1"
+      "WebdriverIO · Next-gen WebDriver test framework for Node.js"
     );
   });
 });

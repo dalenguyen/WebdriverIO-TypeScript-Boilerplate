@@ -130,7 +130,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: ['selenium-standalone'],
+    services: ['selenium-standalone'],
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -225,9 +225,11 @@ exports.config = {
      * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
      * @param {Object} test test details
      */
-    afterTest: function (test) {
-        let name = 'ERROR-' + Date.now()
-        browser.saveScreenshot('./errorShots/' + name + '.png')
+    afterTest: function (test) {        
+        if (test.error !== undefined) {
+            let name = 'ERROR-' + Date.now();
+            browser.saveScreenshot('./errorShots/' + name + '.png');
+        }        
     },
     /**
      * Hook that gets executed after the suite has ended

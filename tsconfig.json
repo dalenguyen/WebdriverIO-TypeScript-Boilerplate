@@ -3,7 +3,7 @@
         "lib": [
             "dom",
             "es7"
-          ],
+        ],
         "target": "es5",
         "module": "commonjs",
         "noImplicitAny": false,
@@ -13,9 +13,12 @@
         "baseUrl": ".",
         "paths": {
                 "*": [ "./*" ],
-                "src/*": ["./test/*"]
-            }
-    },
+                "pages/*": ["./pages/*"],
+                "models/*": ["./models/*"],
+                "test/*": ["./test/*"],
+        },
+        "types": ["webdriverio", "mocha", "node", "chai"]
+    },    
     "include": [
         "./test/**/*.ts"
     ],
