@@ -7,6 +7,7 @@ Create a powerful boilerplate for UI Automation test with WebdriverIO and TypeSc
 + Use Page Object Model for managing your test cases
 + [Mocha](https://mochajs.org/) + [Chai](https://www.chaijs.com/) for testing
 + Interactive report with [Allure](https://webdriver.io/docs/allure-reporter.html)
++ Accessibity test with [Axe](https://github.com/dequelabs/axe-core)
 
 ## Why using TypeScript
 
@@ -53,3 +54,4 @@ npm run run-report
 ## Rerferences
 
 [WebdriverIO API](http://webdriver.io/api/)
+[Wdio-Axe-Example](https://github.com/klamping/wdio-axe-example)

@@ -4,7 +4,7 @@
   "description": "This project will show you how to start your UI Automation Test with WebdriverIO and TypeScript",
   "main": "index.js",
   "scripts": {
-    "prettier": "./node_modules/.bin/prettier --write ./test/**/*.ts ./models/**/*.ts ./pages/**/*.ts ./services/**/*.ts",
+    "prettier": "./node_modules/.bin/prettier --write ./test/**/*.ts ./models/**/*.ts ./pages/**/*.ts",
     "test": "npm run prettier && ./node_modules/.bin/wdio wdio.conf.js",
     "dev": "npm run prettier && ./node_modules/.bin/wdio wdio.conf.js --spec",
     "clean-report": "./node_modules/.bin/rimraf allure-report allure-results",
@@ -33,6 +33,7 @@
     "@wdio/spec-reporter": "^5.2.3",
     "@wdio/sync": "^5.3.2",
     "allure-commandline": "^2.8.1",
+    "axe-core": "^3.1.2",
     "chai": "^4.2.0",
     "prettier": "^1.15.3",
     "rimraf": "^2.6.3",
