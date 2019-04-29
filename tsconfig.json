@@ -17,7 +17,7 @@
                 "models/*": ["./models/*"],
                 "test/*": ["./test/*"],
         },
-        "types": ["webdriverio", "mocha", "node", "chai"]
+        "types": ["@wdio/mocha-framework", "node", "chai", "@wdio/sync"]
     },    
     "include": [
         "./test/**/*.ts"

@@ -152,7 +152,7 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000,
         compilers: [
-            'ts-node/register',
+            // 'ts-node/register',
             'tsconfig-paths/register'
         ]
     },
@@ -187,7 +187,8 @@ exports.config = {
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
     before: function (capabilities, specs) {
-        require('ts-node/register');        
+        // require('ts-node/register');        
+        require('ts-node').register({ files: true });
     },
     /**
      * Runs before a WebdriverIO command gets executed.

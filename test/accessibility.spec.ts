@@ -27,6 +27,7 @@ describe('Axe test', () => {
 		// console.log('Violation details:');
 		// console.log(results.violations[0].nodes[0]);
 
+		// This fails on purpose ;)
 		expect(results.violations.length).to.be.equal(
 			0,
 			`${browser.getUrl()} doesn't pass Accessibility test`

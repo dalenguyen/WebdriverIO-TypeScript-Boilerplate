@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { Test } from './../models';
-import { Element } from 'webdriverio';
+import { Element } from '@wdio/sync';
 
 class TestPage {
 	private test: Test = null;
@@ -18,8 +18,7 @@ class TestPage {
 		return this.test.alias;
 	}
 
-	private getEditBtnEl(): Element<void> {
-		console.log('Btn:', $(this.editBtn).getText());
+	private getEditBtnEl(): Element {
 		return $(this.editBtn);
 	}
 
