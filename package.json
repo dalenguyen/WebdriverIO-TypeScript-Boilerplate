@@ -4,11 +4,12 @@
   "description": "This project will show you how to start your UI Automation Test with WebdriverIO and TypeScript",
   "main": "index.js",
   "scripts": {
-    "prettier": "./node_modules/.bin/prettier --write ./test/**/*.ts ./models/**/*.ts ./pages/**/*.ts",
-    "test": "npm run prettier && ./node_modules/.bin/wdio wdio.conf.js",
-    "dev": "npm run prettier && ./node_modules/.bin/wdio wdio.conf.js --spec",
-    "clean-report": "./node_modules/.bin/rimraf allure-report allure-results",
-    "run-report": "./node_modules/.bin/allure generate allure-results/ --clean && ./node_modules/.bin/allure open",
+    "prettier": "prettier --write --loglevel warn \"**/**/*.ts\"",
+    "test": "rimraf reports/* && npm run report:history && npm run prettier && wdio",
+    "dev": "npm run prettier && wdio --spec",
+    "report:history": "mkdir -p allure-report/history allure-results/history && cp -a allure-report/history allure-results/",
+    "clean-report": "rimraf allure-results",
+    "run-report": "allure generate allure-results/ --clean && allure open -p 8000",
     "report": "npm run clean-report && npm run test ; npm run run-report"
   },
   "keywords": [

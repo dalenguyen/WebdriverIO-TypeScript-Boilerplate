@@ -20,11 +20,11 @@ describe('Axe test', () => {
 				done(results);
 			});
 		}, options);
-		
+
 		// console.log(results.passes);
 		// console.log(results.violations);
 		// // Details will be in nodes
-		// console.log('Violation details:');		
+		// console.log('Violation details:');
 		// console.log(results.violations[0].nodes[0]);
 
 		expect(results.violations.length).to.be.equal(
