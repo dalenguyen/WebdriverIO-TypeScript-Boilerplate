@@ -34,7 +34,7 @@
     "@wdio/spec-reporter": "^5.9.3",
     "@wdio/sync": "^5.10.1",
     "allure-commandline": "^2.9.0",
-    "axe-core": "^3.2.2",
+    "axe-core": "^3.3.0",
     "chai": "^4.2.0",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.3",
