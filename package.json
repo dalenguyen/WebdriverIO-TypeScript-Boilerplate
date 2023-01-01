@@ -39,7 +39,7 @@
     "prettier": "^1.18.2",
     "rimraf": "^2.7.1",
     "ts-node": "^7.0.1",
-    "tsconfig-paths": "^3.9.0",
+    "tsconfig-paths": "^3.10.1",
     "typescript": "^3.6.3",
     "webdriverio": "^5.14.0"
   },
